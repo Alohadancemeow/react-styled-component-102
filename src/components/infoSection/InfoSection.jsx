@@ -30,7 +30,8 @@ const InfoSection = ({
     alt,
     dark,
     primary,
-    darkText
+    darkText,
+    dark2
 }) => {
     return (
         <>
@@ -52,7 +53,9 @@ const InfoSection = ({
                                         spy={true}
                                         exact="true"
                                         offset={-80}
-
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        daek2={dark2 ? 1 : 0}
                                     >
                                         {buttonLabel}
                                     </Button>

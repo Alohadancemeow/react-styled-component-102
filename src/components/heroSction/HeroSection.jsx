@@ -20,7 +20,7 @@ const HeroSection = () => {
     const onHover = () => setHover(!hover)
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
 
             <HeroBg>
                 <VideoBg
@@ -33,10 +33,9 @@ const HeroSection = () => {
             </HeroBg>
 
             <HeroContent>
-                <HeroH1>Virtual Banking Made Easy</HeroH1>
+                <HeroH1>Lorem ipsum dolor sit amet.</HeroH1>
                 <HeroP>
-                    Sign up for accoun today and receive $250 in
-                    credit towards your next payment.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem suscipit architecto?
                 </HeroP>
                 <HeroWrapper>
                     <Button
@@ -45,6 +44,11 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
                         primary='true'
                         // dark='true'
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
                     >
                         Get started
                         {hover ? <ArrowForward /> : <ArrowRight />}
